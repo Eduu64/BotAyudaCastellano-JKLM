@@ -42,7 +42,7 @@ def on_press(tecla):
              
              if silaba in palabra and palabra not in palabras_encontradas:
 
-                #print(palabra)
+                print(palabra)
 
                 if escritor:
                     pyautogui.write(palabra)
