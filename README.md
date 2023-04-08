@@ -1,7 +1,7 @@
 # BOT DE JLKM BOMB PARTY ESPAÑOL
 
 ## Arquitectura
-Bot realizado en python v3.10.6
+* Bot realizado en python v3.10.6
 
 ## Dependecias
 * Pyautogui - Coordenadas cursor, mover cursor,etc.
@@ -9,7 +9,7 @@ Bot realizado en python v3.10.6
 * Pyperclip - copy-paste.
 
 ## Posibles opciones de uso
-Escribir automatico/manual - Cambiando variable [escritor = True/False].
+* Escribir automatico/manual - Cambiando variable [escritor = True/False].
 
 ## Controles
 * Ctrl - posición bomba en funcion de resolución
