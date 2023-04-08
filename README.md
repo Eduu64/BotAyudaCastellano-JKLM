@@ -12,6 +12,8 @@ Bot realizado en python v3.10.6
 escribir automatico/manual - Cambiando variable [escritor = True/False].
 
 ## Controles
-* Ctrl - posicion bomba en funcion de resolución
+* Ctrl - posición bomba en funcion de resolución
 * Alt gr - copia silaba y permite pegar solución o escribirla automaticamente o que sea impresa en la consola
 
+## Bugs a corregir
+* El cursor no se mueve al lugar de la silaba tras haber guardado la posición
