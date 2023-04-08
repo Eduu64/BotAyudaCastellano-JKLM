@@ -9,7 +9,7 @@ Bot realizado en python v3.10.6
 * Pyperclip - copy-paste.
 
 ## Posibles opciones de uso
-escribir automatico/manual - Cambiando variable [escritor = True/False].
+Escribir automatico/manual - Cambiando variable [escritor = True/False].
 
 ## Controles
 * Ctrl - posición bomba en funcion de resolución
