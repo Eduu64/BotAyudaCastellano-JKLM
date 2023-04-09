@@ -13,26 +13,26 @@ palabras_encontradas = []
 silaba = ""
 escritor = True
 
+   
+
 def on_press(tecla):
 
-    global coordenada_x,coordenada_y
-
     if tecla == Key.ctrl_l:
-        coordenada_x,coordenada_y = pyautogui.position()
-        #print(coordenada)
-    
+         coordenada = pyautogui.position()
+         print(coordenada.x,coordenada.y)
+
     if tecla == Key.alt_gr:
         # Mueve el cursor a la posición almacenada en la variable 'coordenada'
-        pyautogui.moveTo(coordenada_x,coordenada_y)
+        pyautogui.moveTo(774,559) #cambiar en función de resolución
         # Hace un doble clic en la posición actual del cursor
         pyautogui.doubleClick()
         #ctrl+c
         pyautogui.hotkey('ctrl', 'c')
         time.sleep(0.01)
-        pyautogui.moveTo(coordenada_x-100,coordenada_y)
+        pyautogui.move(100,0)
         pyautogui.click()
         silaba = pyperclip.paste().lower().strip()
-        #print(silaba)
+        print(silaba)
 
         palabra = ""
 
@@ -53,6 +53,7 @@ def on_press(tecla):
                
                 palabras_encontradas.append(palabra) # Agregar la palabra al conjunto de palabras encontradas
                 break # Detener la búsqueda después de encontrar la primera palabra
+                time.sleep(0.1)
 
 # Configuramos el listener para que detecte las teclas
 with Listener(on_press=on_press) as listener:
